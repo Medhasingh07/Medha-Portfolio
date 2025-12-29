@@ -39,9 +39,10 @@ export default function HeroSection() {
                     <div className="relative w-32 h-32">
                         <Image
                             src={aboutMeImage.imageUrl}
-                            alt="Medha Singh"
+                            alt="Abstract code image"
                             width={128}
                             height={128}
+                            data-ai-hint={aboutMeImage.imageHint}
                             className="rounded-full object-cover border-4 border-primary"
                         />
                     </div>
