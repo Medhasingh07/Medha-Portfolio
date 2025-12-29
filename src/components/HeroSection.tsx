@@ -1,67 +1,42 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { MoveRight, Download, Github, Linkedin } from 'lucide-react';
-import { aboutMeImage, contact } from '@/lib/data';
+import { Sparkles, Rocket } from 'lucide-react';
+
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative w-full py-24 md:py-32">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h1 className="text-4xl font-headline font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Developer
-            </h1>
-            <p className="mt-4 text-lg font-medium text-muted-foreground sm:text-xl md:text-2xl">
-              Hey, I'm <span className="text-primary">Medha Singh</span>, Aspiring Web Developer
-            </p>
-            <p className="mt-6 max-w-xl text-base text-muted-foreground/80">
-              I am a student from India, currently pursuing a degree in Computer Science and Engineering while learning web development. I enjoy building simple and useful websites, turning ideas into real projects, and improving my skills step by step.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
-              <Button asChild size="lg" className="gradient-button">
-                <Link href="#contact">
-                  Let's Talk
-                </Link>
-              </Button>
-               <Button asChild size="lg" variant="outline">
-                <Link href="#latest-projects">
-                  View My Work
-                  <MoveRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-          <div className="relative flex justify-center">
-            <div className="w-full max-w-sm p-6 bg-secondary/50 border border-border rounded-xl backdrop-blur-sm">
-                <div className="flex flex-col items-center space-y-4">
-                    <div className="relative w-32 h-32">
-                        <Image
-                            src={aboutMeImage.imageUrl}
-                            alt="Abstract code image"
-                            width={128}
-                            height={128}
-                            data-ai-hint={aboutMeImage.imageHint}
-                            className="rounded-full object-cover border-4 border-primary"
-                        />
-                    </div>
-                    <h2 className="text-2xl font-bold text-foreground">Medha Singh</h2>
-                    <p className="text-muted-foreground">@medha-singh</p>
-                    <div className="flex gap-4">
-                        <a href={contact.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><Github /></a>
-                        <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><Linkedin /></a>
-                    </div>
-                    <Button asChild className="w-full gradient-button">
-                        <a href="/resume.pdf" download>
-                            <Download className="mr-2 h-4 w-4" /> Download CV
-                        </a>
+    <section id="home" className="relative w-full min-h-[80vh] flex items-center justify-center text-center overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-accent/20 rounded-full filter blur-3xl animate-blob"></div>
+        <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-primary/20 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
+        
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+            <div className="flex flex-col items-center">
+                <h1 className="text-6xl md:text-8xl font-bold font-headline bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary pb-4">
+                    Medha Singh
+                </h1>
+                <p className="mt-2 text-lg font-medium text-muted-foreground sm:text-xl md:text-2xl">
+                    Web Developer | Learning & Building Projects
+                </p>
+                <p className="mt-6 max-w-2xl text-base text-muted-foreground/80">
+                    I am a student learning web development and building projects step by step. I enjoy creating simple and useful websites and want to grow as a skilled developer by working on real projects.
+                </p>
+                <div className="mt-8 flex flex-wrap justify-center gap-4">
+                    <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                        <Link href="#latest-projects">
+                            View Projects
+                        </Link>
+                    </Button>
+                    <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                        <Link href="#contact">
+                            Get in Touch
+                        </Link>
                     </Button>
                 </div>
             </div>
-          </div>
         </div>
-      </div>
+
+        <Sparkles className="absolute top-1/4 right-[15%] h-8 w-8 text-accent opacity-50 animate-pulse" />
+        <Rocket className="absolute bottom-1/4 left-[15%] h-8 w-8 text-primary opacity-50 -rotate-45 animate-pulse animation-delay-1000" />
     </section>
   );
 }

@@ -15,7 +15,7 @@ export default function SkillsSection() {
 
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
           {skills.map((skill, index) => (
-            <Card key={skill.name} className="overflow-hidden shadow-lg transition-transform duration-300 hover:scale-110 bg-secondary border-border hover:border-primary">
+            <Card key={skill.name} className="overflow-hidden shadow-lg transition-transform duration-300 hover:scale-110 bg-card border-border hover:border-primary">
               <CardContent className="flex flex-col items-center justify-center p-6 text-center space-y-3">
                 <skill.icon className="h-12 w-12 text-primary" />
                 <p className="font-bold text-lg text-foreground">{skill.name}</p>

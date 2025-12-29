@@ -18,7 +18,7 @@ import { cn } from '@/lib/utils';
 
 export default function LatestProjectsSection() {
   return (
-    <section id="latest-projects" className="w-full py-20 md:py-32">
+    <section id="latest-projects" className="w-full py-20 md:py-32 bg-secondary/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl text-primary">Latest Projects</h2>
@@ -30,7 +30,7 @@ export default function LatestProjectsSection() {
         <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2">
           {projects.map((project, index) => (
             <div key={project.title} className="transition-transform duration-300 ease-in-out hover:scale-105">
-              <Card className="flex flex-col overflow-hidden h-full bg-secondary/50 border-border">
+              <Card className="flex flex-col overflow-hidden h-full bg-card border-border">
                 <div className="aspect-video relative overflow-hidden">
                   <Image
                     src={project.image.imageUrl}
