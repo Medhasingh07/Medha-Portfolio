@@ -15,10 +15,18 @@ import { projects } from '@/lib/data';
 import { Github, Link as LinkIcon, PlusCircle, BrainCircuit } from 'lucide-react';
 import { ProjectValidationForm } from './ProjectValidationForm';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { cn } from '@/lib/utils';
 
 export default function ProjectsSection() {
+    const accentColors = [
+        'border-blue-500',
+        'border-green-500',
+        'border-pink-500',
+        'border-yellow-500',
+    ];
+
   return (
-    <section id="projects" className="w-full py-20 md:py-32 bg-background">
+    <section id="projects" className="w-full py-20 md:py-32 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">My Projects</h2>
@@ -28,9 +36,9 @@ export default function ProjectsSection() {
         </div>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div key={project.title} className="transition-transform duration-300 ease-in-out hover:scale-105">
-              <Card className="flex flex-col overflow-hidden h-full">
+              <Card className={cn("flex flex-col overflow-hidden h-full border-t-4", accentColors[index % accentColors.length])}>
                 <div className="aspect-video relative overflow-hidden">
                   <Image
                     src={project.image.imageUrl}
@@ -51,13 +59,13 @@ export default function ProjectsSection() {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="flex justify-start gap-4">
+                <CardFooter className="flex justify-start gap-4 bg-secondary/50 pt-6">
                   <Button asChild variant="outline">
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <LinkIcon className="mr-2 h-4 w-4" /> Live Demo
                     </a>
                   </Button>
-                  <Button asChild>
+                  <Button asChild className="gradient-button">
                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" /> GitHub
                     </a>

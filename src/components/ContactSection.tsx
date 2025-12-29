@@ -12,19 +12,19 @@ export default function ContactSection() {
             I'm currently open to new opportunities and collaborations. My inbox is always open, whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button asChild size="lg" className="w-full sm:w-auto">
+            <Button asChild size="lg" className="gradient-button w-full sm:w-auto">
               <a href={`mailto:${contact.email}`}>
                 <Mail className="mr-2 h-5 w-5" />
                 Email Me
               </a>
             </Button>
             <div className="flex items-center gap-4">
-              <Button asChild variant="outline" size="icon" className="h-12 w-12 rounded-full">
+              <Button asChild variant="outline" size="icon" className="h-12 w-12 rounded-full hover:bg-primary hover:text-primary-foreground hover:border-primary">
                 <a href={contact.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-6 w-6" />
                 </a>
               </Button>
-              <Button asChild variant="outline" size="icon" className="h-12 w-12 rounded-full">
+              <Button asChild variant="outline" size="icon" className="h-12 w-12 rounded-full hover:bg-primary hover:text-primary-foreground hover:border-primary">
                 <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-6 w-6" />
                 </a>
