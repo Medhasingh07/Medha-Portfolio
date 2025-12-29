@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, PenTool, Smartphone } from "lucide-react";
+import { Code, PenTool, Smartphone, TabletSmartphone } from "lucide-react";
 
 const services = [
   {
@@ -9,13 +9,19 @@ const services = [
     color: "bg-gradient-to-br from-purple-500 to-indigo-600",
   },
   {
+    icon: Smartphone,
+    title: "App Development",
+    description: "Developing mobile applications for both iOS and Android, focusing on performance and user experience.",
+    color: "bg-gradient-to-br from-green-400 to-cyan-500",
+  },
+  {
     icon: PenTool,
     title: "UI/UX Design",
     description: "Creating intuitive and visually appealing user interfaces that provide a great user experience.",
     color: "bg-gradient-to-br from-pink-500 to-red-500",
   },
   {
-    icon: Smartphone,
+    icon: TabletSmartphone,
     title: "Responsive Design",
     description: "Ensuring your website looks and works great on all devices, from desktops to mobile phones.",
     color: "bg-gradient-to-br from-teal-400 to-blue-500",
@@ -35,7 +41,7 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-3">
+        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
             <Card key={index} className="bg-card border-border text-center transition-transform duration-300 hover:scale-105 hover:border-primary">
               <CardHeader className="items-center">
