@@ -23,13 +23,13 @@ export default function AboutSection() {
               About Me
             </h2>
              <p className="text-muted-foreground md:text-lg">
-              Hello! I'm Medha, and I am currently in the process of becoming a web developer. My interest in technology and how it solves real-world problems led me to pursue a degree in Computer Science and Engineering.
+              As a student learning web development, I am building my skills step by step. I enjoy creating simple, clean, and useful websites that solve real problems. My focus is on continuous improvement through practical work on personal projects.
             </p>
             <p className="text-muted-foreground md:text-lg">
-              I am passionate about building things for the web and enjoy the entire process, from coming up with an idea to seeing it work in the browser. I focus on writing clean and efficient code to create user-friendly and reliable digital experiences.
+              I have experience with HTML, CSS, JavaScript, and basic React. For backend features and hosting, I use Firebase. I am always excited to learn new technologies and apply them in small, manageable projects to expand my knowledge.
             </p>
             <p className="text-muted-foreground md:text-lg">
-              My goal is to continue learning and growing as a developer. I am always open to new challenges and opportunities that can help me build a strong foundation for a career in technology.
+              I believe in writing clean code and continuously refining my work. My ultimate goal is to grow as a developer and contribute to building meaningful web applications that make a difference.
             </p>
           </div>
         </div>
