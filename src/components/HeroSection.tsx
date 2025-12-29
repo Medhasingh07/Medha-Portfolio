@@ -4,36 +4,28 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
 
-const name = 'Medha Singh';
+const headingText = 'Medha Singh';
+const typedText = 'Web Developer | Learning & Building Projects';
 
 export default function HeroSection() {
-  const [displayName, setDisplayName] = useState('');
-  const [showCursor, setShowCursor] = useState(true);
+  const [displayText, setDisplayText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
     let index = 0;
     const typingInterval = setInterval(() => {
-      if (index <= name.length) {
-        setDisplayName(name.substring(0, index));
+      if (index <= typedText.length) {
+        setDisplayText(typedText.substring(0, index));
         index++;
       } else {
         clearInterval(typingInterval);
-        setShowCursor(false); 
-        setTimeout(() => {
-            index = 0;
-            setShowCursor(true);
-        }, 3000);
+        setIsTyping(false);
       }
-    }, 150);
-
-    const cursorInterval = setInterval(() => {
-        setShowCursor(prev => !prev);
-    }, 500);
+    }, 100);
 
     return () => {
-        clearInterval(typingInterval);
-        clearInterval(cursorInterval);
-    }
+      clearInterval(typingInterval);
+    };
   }, []);
 
   return (
@@ -43,12 +35,12 @@ export default function HeroSection() {
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center">
-                <h1 className="text-6xl md:text-8xl font-bold font-headline bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary pb-4 h-28 md:h-36">
-                    {displayName}
-                    <span className="animate-blink text-primary">|</span>
+                <h1 className="text-6xl md:text-8xl font-bold font-headline bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary pb-4">
+                    {headingText}
                 </h1>
-                <p className="mt-2 text-lg font-medium text-muted-foreground sm:text-xl md:text-2xl">
-                    Web Developer | Learning & Building Projects
+                <p className="mt-2 text-lg font-medium text-muted-foreground sm:text-xl md:text-2xl min-h-[3rem]">
+                    {displayText}
+                    {isTyping && <span className="animate-blink text-primary">|</span>}
                 </p>
                 <p className="mt-6 max-w-2xl text-base text-muted-foreground/80">
                     I am a student learning web development and building projects step by step. I enjoy creating simple and useful websites and want to grow as a skilled developer by working on real projects.
