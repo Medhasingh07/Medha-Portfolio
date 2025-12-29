@@ -24,13 +24,13 @@ export default function AboutSection() {
               About Me
             </h2>
             <p className="text-muted-foreground md:text-lg">
-              Hello! I'm Medha Singh, a Computer Science Engineering student. My journey into the world of programming started with a curiosity to understand how things work on the web, and it has since grown into a deep passion for web development.
+              My journey into web development started with a simple curiosity about how websites work. As a Computer Science and Engineering student, I quickly grew passionate about turning ideas into real-world applications.
             </p>
             <p className="text-muted-foreground md:text-lg">
-              I love the process of turning ideas into tangible, real-world projects. I am constantly learning new technologies and improving my skills to build efficient, scalable, and user-friendly applications.
+              I enjoy the process of building projects from the ground up and am always excited to learn new technologies. My goal is to keep improving my skills and grow into a skilled developer who can create efficient and user-friendly digital experiences.
             </p>
             <p className="text-muted-foreground md:text-lg">
-              My goal is to become a skilled full-stack developer and join a forward-thinking tech company where I can contribute to meaningful projects, collaborate with talented people, and continue my growth as a developer.
+              I am focused on building a strong foundation in both frontend and backend development to prepare for a career where I can contribute to meaningful projects.
             </p>
           </div>
         </div>

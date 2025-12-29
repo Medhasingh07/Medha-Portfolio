@@ -11,10 +11,10 @@ export default function HeroSection() {
             Medha Singh
           </h1>
           <p className="mt-4 text-lg font-medium text-accent sm:text-xl md:text-2xl font-headline">
-            Aspiring Web Developer
+            Student & Web Developer
           </p>
           <p className="mt-6 max-w-2xl mx-auto text-base text-muted-foreground md:text-lg">
-            A passionate and motivated computer science student from India, dedicated to building beautiful and functional web applications. I am eager to learn, grow, and contribute to the world of technology.
+            I am a student from India, currently pursuing a Diploma in Computer Science and Engineering while learning web development. I enjoy building simple and useful websites, turning ideas into real projects, and improving my skills step by step.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg" variant="outline">
