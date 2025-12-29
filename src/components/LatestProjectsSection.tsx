@@ -16,12 +16,12 @@ import { ProjectValidationForm } from './ProjectValidationForm';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
 
-export default function ProjectsSection() {
+export default function LatestProjectsSection() {
   return (
-    <section id="projects" className="w-full py-20 md:py-32">
+    <section id="latest-projects" className="w-full py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl text-primary">My Projects</h2>
+          <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl text-primary">Latest Projects</h2>
           <p className="mt-4 text-muted-foreground md:text-lg">
             Here are some of the projects I've worked on. They demonstrate my skills in turning ideas into functional applications.
           </p>

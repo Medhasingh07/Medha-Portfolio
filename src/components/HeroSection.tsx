@@ -26,7 +26,7 @@ export default function HeroSection() {
                 </Link>
               </Button>
                <Button asChild size="lg" variant="outline">
-                <Link href="#projects">
+                <Link href="#latest-projects">
                   View My Work
                   <MoveRight className="ml-2 h-5 w-5" />
                 </Link>
