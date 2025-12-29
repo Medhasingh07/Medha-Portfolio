@@ -10,6 +10,9 @@ export default function SkillsSection() {
     'bg-yellow-100 dark:bg-yellow-900/20',
     'bg-purple-100 dark:bg-purple-900/20',
     'bg-indigo-100 dark:bg-indigo-900/20',
+    'bg-red-100 dark:bg-red-900/20',
+    'bg-teal-100 dark:bg-teal-900/20',
+    'bg-orange-100 dark:bg-orange-900/20',
   ];
   const textColors = [
     'text-blue-600 dark:text-blue-400',
@@ -18,6 +21,9 @@ export default function SkillsSection() {
     'text-yellow-600 dark:text-yellow-400',
     'text-purple-600 dark:text-purple-400',
     'text-indigo-600 dark:text-indigo-400',
+    'text-red-600 dark:text-red-400',
+    'text-teal-600 dark:text-teal-400',
+    'text-orange-600 dark:text-orange-400',
   ];
 
 
@@ -31,7 +37,7 @@ export default function SkillsSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {skills.map((skill, index) => (
             <Card key={skill.name} className={cn('overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105', bgColors[index % bgColors.length])}>
               <CardContent className="flex flex-col items-center justify-center p-6 text-center">

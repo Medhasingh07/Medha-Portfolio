@@ -1,6 +1,6 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
-import { Code, Palette, Code2, Atom, Database, GitBranch } from 'lucide-react';
+import { Code, Palette, Database, GitBranch, Type, Box, Leaf, Server } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export const navLinks = [
@@ -14,9 +14,12 @@ export const navLinks = [
 export const skills: { name: string; level: number; icon: LucideIcon }[] = [
   { name: 'HTML', level: 95, icon: Code },
   { name: 'CSS', level: 90, icon: Palette },
-  { name: 'JavaScript', level: 80, icon: Code2 },
-  { name: 'React', level: 75, icon: Atom },
+  { name: 'JavaScript', level: 80, icon: Code },
+  { name: 'TypeScript', level: 75, icon: Type },
+  { name: 'React', level: 75, icon: Code },
+  { name: 'Next.js', level: 70, icon: Box },
   { name: 'Firebase', level: 70, icon: Database },
+  { name: 'MongoDB', level: 65, icon: Server },
   { name: 'Git & GitHub', level: 85, icon: GitBranch },
 ];
 
