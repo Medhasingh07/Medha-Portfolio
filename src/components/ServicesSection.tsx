@@ -6,16 +6,19 @@ const services = [
     icon: Code,
     title: "Web Development",
     description: "Building responsive and functional websites from scratch using modern technologies like React and Next.js.",
+    color: "bg-gradient-to-br from-purple-500 to-indigo-600",
   },
   {
     icon: PenTool,
     title: "UI/UX Design",
     description: "Creating intuitive and visually appealing user interfaces that provide a great user experience.",
+    color: "bg-gradient-to-br from-pink-500 to-red-500",
   },
   {
     icon: Smartphone,
     title: "Responsive Design",
     description: "Ensuring your website looks and works great on all devices, from desktops to mobile phones.",
+    color: "bg-gradient-to-br from-teal-400 to-blue-500",
   },
 ];
 
@@ -36,8 +39,8 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card key={index} className="bg-card border-border text-center transition-transform duration-300 hover:scale-105 hover:border-primary">
               <CardHeader className="items-center">
-                <div className="p-4 bg-primary/10 rounded-full">
-                  <service.icon className="h-8 w-8 text-primary" />
+                <div className={`p-4 rounded-lg ${service.color}`}>
+                  <service.icon className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="pt-4">{service.title}</CardTitle>
               </CardHeader>
