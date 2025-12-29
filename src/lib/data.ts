@@ -54,14 +54,6 @@ export const projects = [
     image: findImage('project-gov-scheme'),
   },
   {
-    title: 'Student Management System',
-    description: 'A basic CRUD application for managing student records. It allows adding, viewing, updating, and deleting student information.',
-    tech: ['React', 'Firebase'],
-    liveUrl: '#',
-    repoUrl: 'https://github.com/medha-singh/student-management',
-    image: findImage('project-student-mgmt'),
-  },
-  {
     title: 'To-Do App with Firebase',
     description: 'A simple and effective to-do list application with real-time data synchronization using Firebase Firestore, allowing users to manage their tasks from any device.',
     tech: ['JavaScript', 'Firebase'],
