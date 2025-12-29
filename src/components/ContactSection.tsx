@@ -14,9 +14,9 @@ export default function ContactSection() {
             Feel free to reach out for collaborations or just a friendly chat
           </p>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 [perspective:1000px]">
             <a href={`mailto:${contact.email}`} className="group">
-              <Card className="bg-card/50 border-border/30 h-full text-center p-6 transition-all duration-300 hover:border-primary/50 hover:bg-card/80 hover:scale-105">
+              <Card className="bg-card/50 border-border/30 h-full text-center p-6 transition-all duration-300 hover:border-primary/50 hover:bg-card/80 group-hover:[transform:rotateY(-15deg)]">
                 <CardContent className="flex flex-col items-center justify-center gap-4">
                   <div className="p-4 bg-gradient-to-br from-pink-500 to-red-500 rounded-lg">
                     <Mail className="h-8 w-8 text-white" />
@@ -28,7 +28,7 @@ export default function ContactSection() {
             </a>
             
             <a href={contact.github} target="_blank" rel="noopener noreferrer" className="group">
-              <Card className="bg-card/50 border-border/30 h-full text-center p-6 transition-all duration-300 hover:border-primary/50 hover:bg-card/80 hover:scale-105">
+              <Card className="bg-card/50 border-border/30 h-full text-center p-6 transition-all duration-300 hover:border-primary/50 hover:bg-card/80 group-hover:[transform:rotateY(-15deg)]">
                 <CardContent className="flex flex-col items-center justify-center gap-4">
                   <div className="p-4 bg-muted rounded-lg">
                     <Github className="h-8 w-8 text-foreground" />
@@ -40,7 +40,7 @@ export default function ContactSection() {
             </a>
             
             <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="group">
-              <Card className="bg-card/50 border-border/30 h-full text-center p-6 transition-all duration-300 hover:border-primary/50 hover:bg-card/80 hover:scale-105">
+              <Card className="bg-card/50 border-border/30 h-full text-center p-6 transition-all duration-300 hover:border-primary/50 hover:bg-card/80 group-hover:[transform:rotateY(-15deg)]">
                 <CardContent className="flex flex-col items-center justify-center gap-4">
                   <div className="p-4 bg-gradient-to-br from-teal-400 to-blue-500 rounded-lg">
                     <Linkedin className="h-8 w-8 text-white" />
