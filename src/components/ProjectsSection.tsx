@@ -27,9 +27,9 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2" style={{ perspective: '1000px' }}>
+        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project) => (
-            <div key={project.title} className="transition-transform duration-500 ease-in-out hover:[transform:rotateY(10deg)_rotateX(2deg)]">
+            <div key={project.title} className="transition-transform duration-300 ease-in-out hover:scale-105">
               <Card className="flex flex-col overflow-hidden h-full">
                 <div className="aspect-video relative overflow-hidden">
                   <Image
