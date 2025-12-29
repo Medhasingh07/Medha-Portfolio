@@ -27,42 +27,44 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2" style={{ perspective: '1000px' }}>
           {projects.map((project) => (
-            <Card key={project.title} className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
-              <div className="aspect-video relative overflow-hidden">
-                <Image
-                  src={project.image.imageUrl}
-                  alt={project.image.description}
-                  fill
-                  data-ai-hint={project.image.imageHint}
-                  className="object-cover"
-                />
-              </div>
-              <CardHeader>
-                 <CardTitle className="pt-2">{project.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex-grow space-y-4">
-                <CardDescription>{project.description}</CardDescription>
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech) => (
-                    <Badge key={tech} variant="secondary">{tech}</Badge>
-                  ))}
+            <div key={project.title} className="transition-transform duration-500 ease-in-out hover:[transform:rotateY(10deg)_rotateX(2deg)]">
+              <Card className="flex flex-col overflow-hidden h-full">
+                <div className="aspect-video relative overflow-hidden">
+                  <Image
+                    src={project.image.imageUrl}
+                    alt={project.image.description}
+                    fill
+                    data-ai-hint={project.image.imageHint}
+                    className="object-cover"
+                  />
                 </div>
-              </CardContent>
-              <CardFooter className="flex justify-start gap-4">
-                <Button asChild variant="outline">
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <LinkIcon className="mr-2 h-4 w-4" /> Live Demo
-                  </a>
-                </Button>
-                <Button asChild>
-                  <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" /> GitHub
-                  </a>
-                </Button>
-              </CardFooter>
-            </Card>
+                <CardHeader>
+                   <CardTitle className="pt-2">{project.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow space-y-4">
+                  <CardDescription>{project.description}</CardDescription>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <Badge key={tech} variant="secondary">{tech}</Badge>
+                    ))}
+                  </div>
+                </CardContent>
+                <CardFooter className="flex justify-start gap-4">
+                  <Button asChild variant="outline">
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <LinkIcon className="mr-2 h-4 w-4" /> Live Demo
+                    </a>
+                  </Button>
+                  <Button asChild>
+                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" /> GitHub
+                    </a>
+                  </Button>
+                </CardFooter>
+              </Card>
+            </div>
           ))}
         </div>
         
