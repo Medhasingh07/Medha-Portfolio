@@ -1,9 +1,41 @@
+'use client';
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Sparkles, Rocket } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
+const name = 'Medha Singh';
 
 export default function HeroSection() {
+  const [displayName, setDisplayName] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      if (index <= name.length) {
+        setDisplayName(name.substring(0, index));
+        index++;
+      } else {
+        clearInterval(typingInterval);
+        setShowCursor(false); 
+        setTimeout(() => {
+            index = 0;
+            setShowCursor(true);
+        }, 3000);
+      }
+    }, 150);
+
+    const cursorInterval = setInterval(() => {
+        setShowCursor(prev => !prev);
+    }, 500);
+
+    return () => {
+        clearInterval(typingInterval);
+        clearInterval(cursorInterval);
+    }
+  }, []);
+
   return (
     <section id="home" className="relative w-full min-h-[80vh] flex items-center justify-center text-center overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-accent/20 rounded-full filter blur-3xl animate-blob"></div>
@@ -11,8 +43,9 @@ export default function HeroSection() {
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center">
-                <h1 className="text-6xl md:text-8xl font-bold font-headline bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary pb-4">
-                    Medha Singh
+                <h1 className="text-6xl md:text-8xl font-bold font-headline bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary pb-4 h-28 md:h-36">
+                    {displayName}
+                    <span className="animate-blink text-primary">|</span>
                 </h1>
                 <p className="mt-2 text-lg font-medium text-muted-foreground sm:text-xl md:text-2xl">
                     Web Developer | Learning & Building Projects
@@ -34,9 +67,6 @@ export default function HeroSection() {
                 </div>
             </div>
         </div>
-
-        <Sparkles className="absolute top-1/4 right-[15%] h-8 w-8 text-accent opacity-50 animate-pulse" />
-        <Rocket className="absolute bottom-1/4 left-[15%] h-8 w-8 text-primary opacity-50 -rotate-45 animate-pulse animation-delay-1000" />
     </section>
   );
 }
