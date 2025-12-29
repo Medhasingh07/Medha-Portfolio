@@ -1,25 +1,26 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
-import { Code, Palette, Database, GitBranch, Type, Box, Leaf, Server } from 'lucide-react';
+import { Code, Palette, Zap, GitBranch, Type, Box, Database, Flame, Server } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#latest-projects' },
+  { name: 'Services', href: '#services' },
+  { name: 'Latest Projects', href: '#latest-projects' },
   { name: 'Contact', href: '#contact' },
 ];
 
-export const skills: { name: string; icon: LucideIcon }[] = [
-  { name: 'HTML', icon: Code },
-  { name: 'CSS', icon: Palette },
-  { name: 'JavaScript', icon: Code },
-  { name: 'TypeScript', icon: Type },
-  { name: 'React', icon: Code },
-  { name: 'Next.js', icon: Box },
-  { name: 'Firebase', icon: Database },
-  { name: 'MongoDB', icon: Server },
-  { name: 'Git & GitHub', icon: GitBranch },
+export const skills: { name: string; icon: LucideIcon; color: string }[] = [
+  { name: 'HTML', icon: Code, color: 'linear-gradient(to right, #ff6b6b, #f06595)' },
+  { name: 'CSS', icon: Palette, color: 'linear-gradient(to right, #364fc7, #4dabf7)' },
+  { name: 'JavaScript', icon: Zap, color: 'linear-gradient(to right, #fcc419, #ff922b)' },
+  { name: 'React', icon: Code, color: 'linear-gradient(to right, #20c997, #96f2d7)' },
+  { name: 'Next.js', icon: Box, color: 'linear-gradient(to right, #63e6be, #38d9a9)' },
+  { name: 'TypeScript', icon: Type, color: 'linear-gradient(to right, #4c6ef5, #228be6)' },
+  { name: 'Firebase', icon: Flame, color: 'linear-gradient(to right, #ff922b, #fd7e14)' },
+  { name: 'MongoDB', icon: Database, color: 'linear-gradient(to right, #82c91e, #5c940d)' },
+  { name: 'Git & GitHub', icon: GitBranch, color: 'linear-gradient(to right, #e64980, #c2255c)' },
 ];
 
 const findImage = (id: string): ImagePlaceholder => {
