@@ -11,7 +11,7 @@ export default function HeroSection() {
             Medha Singh
           </h1>
           <p className="mt-4 text-lg font-medium text-accent sm:text-xl md:text-2xl font-headline">
-            Diploma CSE Student | Aspiring Web Developer
+            Aspiring Web Developer
           </p>
           <p className="mt-6 max-w-2xl mx-auto text-base text-muted-foreground md:text-lg">
             A passionate and motivated computer science student from India, dedicated to building beautiful and functional web applications. I am eager to learn, grow, and contribute to the world of technology.

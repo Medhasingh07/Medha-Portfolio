@@ -24,7 +24,7 @@ export default function AboutSection() {
               About Me
             </h2>
             <p className="text-muted-foreground md:text-lg">
-              Hello! I'm Medha Singh, currently pursuing a Diploma in Computer Science Engineering. My journey into the world of programming started with a curiosity to understand how things work on the web, and it has since grown into a deep passion for web development.
+              Hello! I'm Medha Singh, a Computer Science Engineering student. My journey into the world of programming started with a curiosity to understand how things work on the web, and it has since grown into a deep passion for web development.
             </p>
             <p className="text-muted-foreground md:text-lg">
               I love the process of turning ideas into tangible, real-world projects. I am constantly learning new technologies and improving my skills to build efficient, scalable, and user-friendly applications.
