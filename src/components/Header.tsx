@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Code } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { navLinks } from '@/lib/data';
@@ -27,7 +27,8 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="#home" className="text-xl font-bold font-headline tracking-tight text-foreground transition-colors hover:text-accent">
+        <Link href="#home" className="flex items-center gap-2 text-xl font-bold font-headline tracking-tight text-foreground transition-colors hover:text-primary">
+          <Code className="h-6 w-6 text-primary" />
           Medha Singh
         </Link>
 
@@ -36,7 +37,7 @@ export default function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className="relative text-sm font-medium text-muted-foreground transition-colors hover:text-foreground after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
+              className="relative text-sm font-medium text-muted-foreground transition-colors hover:text-foreground after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.name}
             </Link>
@@ -69,7 +70,7 @@ export default function Header() {
                     <SheetClose asChild key={link.name}>
                       <Link
                         href={link.href}
-                        className="text-lg font-medium text-foreground transition-colors hover:text-accent"
+                        className="text-lg font-medium text-foreground transition-colors hover:text-primary"
                       >
                         {link.name}
                       </Link>

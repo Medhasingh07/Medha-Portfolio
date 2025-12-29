@@ -3,12 +3,10 @@ import { aboutMeImage } from '@/lib/data';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="w-full py-20 md:py-32 bg-secondary">
+    <section id="about" className="w-full py-20 md:py-32 bg-secondary/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 md:grid-cols-2 md:gap-16 items-center">
           <div className="relative w-full max-w-sm mx-auto md:max-w-md">
-            <div className="absolute -top-3 -left-3 w-full h-full bg-primary/20 rounded-lg transform -rotate-3 transition-transform duration-300 group-hover:rotate-0"></div>
-             <div className="absolute -bottom-3 -right-3 w-full h-full bg-accent/20 rounded-lg transform rotate-3 transition-transform duration-300 group-hover:rotate-0"></div>
             <div className="relative w-full h-auto overflow-hidden rounded-lg shadow-lg border-2 border-border">
                 <Image
                   src={aboutMeImage.imageUrl}
@@ -21,17 +19,17 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
+            <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl text-primary">
               About Me
             </h2>
-            <p className="text-muted-foreground md:text-lg">
-              My journey into web development started with a simple curiosity about how websites work. As a Computer Science and Engineering student, I quickly grew passionate about turning ideas into real-world applications.
+             <p className="text-muted-foreground md:text-lg">
+              Hello! I'm Medha, and I am currently in the process of becoming a web developer. My interest in technology and how it solves real-world problems led me to pursue a degree in Computer Science and Engineering.
             </p>
             <p className="text-muted-foreground md:text-lg">
-              I enjoy the process of building projects from the ground up and am always excited to learn new technologies. My goal is to keep improving my skills and grow into a skilled developer who can create efficient and user-friendly digital experiences.
+              I am passionate about building things for the web and enjoy the entire process, from coming up with an idea to seeing it work in the browser. I focus on writing clean and efficient code to create user-friendly and reliable digital experiences.
             </p>
             <p className="text-muted-foreground md:text-lg">
-              I am focused on building a strong foundation in both frontend and backend development to prepare for a career where I can contribute to meaningful projects.
+              My goal is to continue learning and growing as a developer. I am always open to new challenges and opportunities that can help me build a strong foundation for a career in technology.
             </p>
           </div>
         </div>

@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -18,27 +17,20 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { cn } from '@/lib/utils';
 
 export default function ProjectsSection() {
-    const accentColors = [
-        'border-blue-500',
-        'border-green-500',
-        'border-pink-500',
-        'border-yellow-500',
-    ];
-
   return (
-    <section id="projects" className="w-full py-20 md:py-32 bg-secondary">
+    <section id="projects" className="w-full py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">My Projects</h2>
+          <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl text-primary">My Projects</h2>
           <p className="mt-4 text-muted-foreground md:text-lg">
             Here are some of the projects I've worked on. They demonstrate my skills in turning ideas into functional applications.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2">
           {projects.map((project, index) => (
             <div key={project.title} className="transition-transform duration-300 ease-in-out hover:scale-105">
-              <Card className={cn("flex flex-col overflow-hidden h-full border-t-4", accentColors[index % accentColors.length])}>
+              <Card className="flex flex-col overflow-hidden h-full bg-secondary/50 border-border">
                 <div className="aspect-video relative overflow-hidden">
                   <Image
                     src={project.image.imageUrl}
@@ -52,14 +44,14 @@ export default function ProjectsSection() {
                    <CardTitle className="pt-2">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow space-y-4">
-                  <CardDescription>{project.description}</CardDescription>
+                  <p className="text-muted-foreground">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
-                      <Badge key={tech} variant="secondary">{tech}</Badge>
+                      <Badge key={tech} variant="secondary" className="bg-primary/10 text-primary">{tech}</Badge>
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="flex justify-start gap-4 bg-secondary/50 pt-6">
+                <CardFooter className="flex justify-start gap-4 pt-6">
                   <Button asChild variant="outline">
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <LinkIcon className="mr-2 h-4 w-4" /> Live Demo

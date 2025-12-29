@@ -11,16 +11,16 @@ export const navLinks = [
   { name: 'Contact', href: '#contact' },
 ];
 
-export const skills: { name: string; level: number; icon: LucideIcon }[] = [
-  { name: 'HTML', level: 95, icon: Code },
-  { name: 'CSS', level: 90, icon: Palette },
-  { name: 'JavaScript', level: 80, icon: Code },
-  { name: 'TypeScript', level: 75, icon: Type },
-  { name: 'React', level: 75, icon: Code },
-  { name: 'Next.js', level: 70, icon: Box },
-  { name: 'Firebase', level: 70, icon: Database },
-  { name: 'MongoDB', level: 65, icon: Server },
-  { name: 'Git & GitHub', level: 85, icon: GitBranch },
+export const skills: { name: string; icon: LucideIcon }[] = [
+  { name: 'HTML', icon: Code },
+  { name: 'CSS', icon: Palette },
+  { name: 'JavaScript', icon: Code },
+  { name: 'TypeScript', icon: Type },
+  { name: 'React', icon: Code },
+  { name: 'Next.js', icon: Box },
+  { name: 'Firebase', icon: Database },
+  { name: 'MongoDB', icon: Server },
+  { name: 'Git & GitHub', icon: GitBranch },
 ];
 
 const findImage = (id: string): ImagePlaceholder => {
