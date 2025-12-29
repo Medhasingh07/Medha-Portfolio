@@ -46,7 +46,7 @@ export default function HeroSection() {
                     I am a student learning web development and building projects step by step. I enjoy creating simple and useful websites and want to grow as a skilled developer by working on real projects.
                 </p>
                 <div className="mt-8 flex flex-wrap justify-center gap-4">
-                    <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                    <Button asChild size="lg" className="gradient-button">
                         <Link href="#latest-projects">
                             View Projects
                         </Link>
