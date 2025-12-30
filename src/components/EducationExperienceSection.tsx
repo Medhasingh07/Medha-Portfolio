@@ -1,3 +1,4 @@
+
 import { GraduationCap, Briefcase, CheckCircle2 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -44,25 +45,44 @@ const EducationExperienceSection = () => {
                 <span className="text-2xl font-bold">Experience</span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-6">
+              <div>
+                <h3 className="font-bold text-lg text-foreground">Full Stack Developer Intern</h3>
+                <p className="text-muted-foreground">Revlabz.ai (6 Months)</p>
+                <ul className="mt-2 space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <span>Worked on full-stack web applications using React, JavaScript, and modern UI frameworks.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <span>Integrated APIs and improved application performance.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <span>Collaborated with team members to deliver scalable and maintainable features.</span>
+                  </li>
+                </ul>
+              </div>
+
               <div>
                 <h3 className="font-bold text-lg text-foreground">Full Stack Developer Intern</h3>
                 <p className="text-muted-foreground">Hanumant Technology Pvt. Ltd.</p>
+                <ul className="mt-2 space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <span>Designed and deployed 3+ applications using React & Spring Boot.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <span>Improved API performance by 25%.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <span>Built responsive UI components and optimized backend services.</span>
+                  </li>
+                </ul>
               </div>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                  <span>Designed and deployed 3+ web applications using React & Spring Boot.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                  <span>Improved API performance by 25% through optimization.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                  <span>Worked on scalable backend APIs and responsive UI components.</span>
-                </li>
-              </ul>
             </CardContent>
           </Card>
         </div>
