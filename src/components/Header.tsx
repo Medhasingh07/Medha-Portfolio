@@ -10,8 +10,10 @@ import { cn } from '@/lib/utils';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
@@ -45,6 +47,7 @@ export default function Header() {
         </nav>
 
         <div className="md:hidden">
+         {isClient && (
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -80,6 +83,7 @@ export default function Header() {
               </div>
             </SheetContent>
           </Sheet>
+         )}
         </div>
       </div>
     </header>
