@@ -31,11 +31,6 @@ const EducationExperienceSection = () => {
                 <p className="text-muted-foreground">School of Management Sciences, Lucknow</p>
                 <p className="text-sm text-muted-foreground/80">Status: Pursuing</p>
               </div>
-              <div className="border-t border-border/50 pt-6">
-                <h3 className="font-bold text-lg text-foreground">Bachelor of Computer Applications (BCA)</h3>
-                <p className="text-muted-foreground">Computer Science Engineering – Integral University</p>
-                <p className="text-sm text-muted-foreground/80">CGPA: 8.1 / 10 | Expected Graduation: 2026</p>
-              </div>
             </CardContent>
           </Card>
 
