@@ -67,7 +67,7 @@ const EducationExperienceSection = () => {
 
               <div>
                 <h3 className="font-bold text-lg text-foreground">Full Stack Developer Intern</h3>
-                <p className="text-muted-foreground">Hanumant Technology Pvt. Ltd.</p>
+                <p className="text-muted-foreground">Hanumant Technology Pvt. Ltd. (1 Year)</p>
                 <ul className="mt-2 space-y-2 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
