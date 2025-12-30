@@ -2,12 +2,10 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  experimental: {
-    // This is to allow cross-origin requests from the Firebase Studio preview environment.
-    allowedDevOrigins: [
-      'https://6000-firebase-studio-1767022927244.cluster-ulqnojp5endvgve6krhe7klaws.cloudworkstations.dev',
-    ],
-  },
+  // This is to allow cross-origin requests from the Firebase Studio preview environment.
+  allowedDevOrigins: [
+    'https://6000-firebase-studio-1767022927244.cluster-ulqnojp5endvgve6krhe7klaws.cloudworkstations.dev',
+  ],
   typescript: {
     ignoreBuildErrors: true,
   },
