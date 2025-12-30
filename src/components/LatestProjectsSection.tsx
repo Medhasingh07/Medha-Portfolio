@@ -27,7 +27,7 @@ export default function LatestProjectsSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-3">
           {projects.map((project, index) => (
             <div key={project.title} className="transition-transform duration-300 ease-in-out hover:scale-105">
               <Card className="flex flex-col overflow-hidden h-full bg-card border-border">
