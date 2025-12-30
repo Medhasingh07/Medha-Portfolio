@@ -67,7 +67,7 @@ export const projects = [
 export const aboutMeImage = findImage('about-me');
 
 export const contact = {
-  email: 'medha.singh.dev@email.com',
+  email: 'medhasingh1350@gmail.com',
   github: 'https://github.com/medhasingh07',
   linkedin: 'https://www.linkedin.com/in/medhasingh10/',
 };
