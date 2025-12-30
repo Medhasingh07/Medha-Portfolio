@@ -44,7 +44,7 @@ export default function LatestProjectsSection() {
                    <CardTitle className="pt-2">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow space-y-4">
-                  <p className="text-muted-foreground">{project.description}</p>
+                  <p className="text-muted-foreground line-clamp-3 text-ellipsis">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
                       <Badge key={tech} variant="secondary" className="bg-primary/10 text-primary">{tech}</Badge>

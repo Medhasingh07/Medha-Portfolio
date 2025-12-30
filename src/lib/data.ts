@@ -68,6 +68,6 @@ export const aboutMeImage = findImage('about-me');
 
 export const contact = {
   email: 'medha.singh.dev@email.com',
-  github: 'https://github.com/medha-singh',
+  github: 'https://github.com/medhasingh07',
   linkedin: 'https://www.linkedin.com/in/medhasingh10/',
 };

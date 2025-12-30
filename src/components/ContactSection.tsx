@@ -46,7 +46,7 @@ export default function ContactSection() {
                     <Linkedin className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold">LinkedIn</h3>
-                  <p className="text-muted-foreground">{contact.linkedin.replace('https://linkedin.com/in/', 'linkedin.com/in/...')}</p>
+                  <p className="text-muted-foreground">{contact.linkedin.replace('https://www.linkedin.com/in/', 'linkedin.com/in/...')}</p>
                 </CardContent>
               </Card>
             </a>
