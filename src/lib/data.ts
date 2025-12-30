@@ -5,7 +5,8 @@ import type { LucideIcon } from 'lucide-react';
 
 export const navLinks = [
   { name: 'About', href: '#about' },
-  { name: 'Education & Experience', href: '#education-experience'},
+  { name: 'Education', href: '#education' },
+  { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
   { name: 'Services', href: '#services' },
   { name: 'Latest Projects', href: '#latest-projects' },
