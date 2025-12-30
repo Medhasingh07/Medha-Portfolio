@@ -1,7 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Award, BarChart, BugOff, Rocket, Trophy, Zap } from 'lucide-react';
-import { Button } from './ui/button';
-import Link from 'next/link';
 
 const achievements = [
   {
@@ -84,11 +82,6 @@ export default function AboutSection() {
                     </li>
                     ))}
                 </ul>
-            </div>
-            <div className="mt-4">
-              <Button size="lg" className="gradient-button" asChild>
-                <a href="/Medha_Singh_CV.pdf" download>Download CV</a>
-              </Button>
             </div>
           </div>
 
