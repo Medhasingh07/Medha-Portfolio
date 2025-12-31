@@ -29,6 +29,12 @@
       "description": "Placeholder image for a to-do app project.",
       "imageUrl": "https://images.unsplash.com/photo-1598791318878-10e76d178023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGVja2xpc3QlMjBub3RlYm9va3xlbnwwfHx8fDE3NjcwMjM0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "checklist notebook"
+    },
+    {
+      "id": "project-healthy",
+      "description": "Placeholder image for a health and fitness website.",
+      "imageUrl": "https://images.unsplash.com/photo-1634144646738-809a0f8897c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaXRuZXNzJTIwaGVhbHRofGVufDB8fHx8MTc2NzE3OTc5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fitness health"
     }
   ]
 }
