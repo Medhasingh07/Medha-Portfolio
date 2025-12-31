@@ -47,7 +47,7 @@ export const projects = [
     description: 'A responsive personal portfolio to showcase my skills and projects to potential employers and collaborators. Built with modern web technologies.',
     tech: ['React', 'Next.js', 'Tailwind CSS'],
     liveUrl: '#',
-    repoUrl: 'https://github.com/Medhasingh07/Medha-Portfolio.git',
+    repoUrl: 'https://github.com/Medhasingh07/Medha-Portfolio',
     image: findImage('project-portfolio'),
   },
   {
