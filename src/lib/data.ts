@@ -53,7 +53,7 @@ export const projects = [
   {
     title: 'Govt. Scheme Eligibility Checker',
     description: 'A user-friendly tool to help citizens check their eligibility for various government schemes based on their profile, simplifying access to public services.',
-    tech: ['Next.js'],
+    tech: ['Next.js', 'React', 'Tailwind CSS'],
     liveUrl: '#',
     repoUrl: 'https://github.com/Medhasingh07/Sarkari-Suvidha.git',
     image: findImage('project-gov-scheme'),
