@@ -19,8 +19,11 @@ export const skills: { name: string; icon: LucideIcon; color: string }[] = [
   { name: 'React', icon: Code, color: 'linear-gradient(to right, #20c997, #96f2d7)' },
   { name: 'Next.js', icon: Box, color: 'linear-gradient(to right, #63e6be, #38d9a9)' },
   { name: 'TypeScript', icon: Type, color: 'linear-gradient(to right, #4c6ef5, #228be6)' },
+  { name: 'Java', icon: Code, color: 'linear-gradient(to right, #f76707, #d9480f)' },
+  { name: 'Python', icon: Code, color: 'linear-gradient(to right, #15aabf, #1098ad)' },
   { name: 'Firebase', icon: Flame, color: 'linear-gradient(to right, #ff922b, #fd7e14)' },
   { name: 'MongoDB', icon: Database, color: 'linear-gradient(to right, #82c91e, #5c940d)' },
+  { name: 'PostgreSQL', icon: Database, color: 'linear-gradient(to right, #228be6, #1c7ed6)' },
   { name: 'Git & GitHub', icon: GitBranch, color: 'linear-gradient(to right, #e64980, #c2255c)' },
 ];
 
