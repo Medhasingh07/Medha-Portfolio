@@ -33,8 +33,8 @@
     {
       "id": "project-healthy",
       "description": "A vibrant photo of a person running, conveying speed and fitness.",
-      "imageUrl": "https://images.unsplash.com/photo-1473446224855-b52b3633b664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBydW5uaW5nJTIwZmFzdHxlbnwwfHx8fDE3NjcxNzk3OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person running"
+      "imageUrl": "https://images.unsplash.com/photo-1541534401786-204b8a203f12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaXRuZXNzfGVufDB8fHx8MTc2NzE4MDE4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fitness health"
     }
   ]
 }
