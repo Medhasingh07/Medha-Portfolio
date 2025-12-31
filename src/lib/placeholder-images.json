@@ -32,9 +32,9 @@
     },
     {
       "id": "project-healthy",
-      "description": "A vibrant photo of healthy food, including fruits and vegetables, arranged neatly on a plate.",
-      "imageUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba1a033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwaGVhbHRofGVufDB8fHx8MTc2NzE3OTc5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "healthy food"
+      "description": "A vibrant photo of a person running, conveying speed and fitness.",
+      "imageUrl": "https://images.unsplash.com/photo-1473446224855-b52b3633b664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBydW5uaW5nJTIwZmFzdHxlbnwwfHx8fDE3NjcxNzk3OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person running"
     }
   ]
 }
