@@ -32,9 +32,9 @@
     },
     {
       "id": "project-healthy",
-      "description": "Placeholder image for a health and fitness website.",
-      "imageUrl": "https://images.unsplash.com/photo-1634144646738-809a0f8897c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaXRuZXNzJTIwaGVhbHRofGVufDB8fHx8MTc2NzE3OTc5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fitness health"
+      "description": "A vibrant photo of healthy food, including fruits and vegetables, arranged neatly on a plate.",
+      "imageUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba1a033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwaGVhbHRofGVufDB8fHx8MTc2NzE3OTc5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "healthy food"
     }
   ]
 }
