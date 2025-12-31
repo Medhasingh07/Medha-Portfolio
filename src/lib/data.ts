@@ -54,14 +54,6 @@ export const projects = [
     repoUrl: 'https://github.com/Medhasingh07/Sarkari-Suvidha.git',
     image: findImage('project-gov-scheme'),
   },
-  {
-    title: 'To-Do App with Firebase',
-    description: 'A simple and effective to-do list application with real-time data synchronization using Firebase Firestore, allowing users to manage their tasks from any device.',
-    tech: ['JavaScript', 'Firebase'],
-    liveUrl: '#',
-    repoUrl: 'https://github.com/medha-singh/firebase-todo',
-    image: findImage('project-todo'),
-  },
 ];
 
 export const aboutMeImage = findImage('about-me');
