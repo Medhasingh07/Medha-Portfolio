@@ -51,7 +51,7 @@ export const projects = [
     description: 'A user-friendly tool to help citizens check their eligibility for various government schemes based on their profile, simplifying access to public services.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: '#',
-    repoUrl: 'https://github.com/medha-singh/scheme-checker',
+    repoUrl: 'https://github.com/Medhasingh07/Sarkari-Suvidha.git',
     image: findImage('project-gov-scheme'),
   },
   {
