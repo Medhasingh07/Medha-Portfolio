@@ -62,7 +62,7 @@ export const projects = [
     title: 'Healthy - Fitness Website',
     description: 'A website focused on health and fitness, providing resources and information to users. Built with JavaScript.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://github.com/Medhasingh07/healthy.git',
+    liveUrl: 'https://healthy-livid.vercel.app/',
     repoUrl: 'https://github.com/Medhasingh07/healthy.git',
     image: findImage('project-healthy'),
   },
